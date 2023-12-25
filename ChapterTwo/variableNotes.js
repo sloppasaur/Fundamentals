@@ -1,6 +1,6 @@
 // This is notes on creating variables
 
-// Declaring Variables
+// ---------- Declaring Variables ----------
 
 // The first time you declare a variable, you need to use the special word to create it:
 let firstname = "Maria";
@@ -23,7 +23,7 @@ console.log(message);
 // "\" will let you use things that would normally be seen by the interpreter:
 // \n and \\ would create a new line and show a backslash resepectively
 
-// Number
+// ---------- Number ----------
 // The number datatype can can represent a plethora of different numeral formats:
 // decimals, exponenpials, octals, hexadecimals, and binary numbers can be included.
 let intNum = 1;
@@ -42,7 +42,7 @@ let bigNum = 90071992547409920n;
 // let result = bigNum + intNum;   
 // console.log(result);  
 
-// Booleans
+// ---------- Booleans ----------
 // Booleans can hold two values: true or false.
 let bool1 = true;
 let bool2 = false;
@@ -78,12 +78,30 @@ console.log(nr1 + nr2); // The answer should be 4, but the output is 22 due to c
 // var ** var for exponentiation
 // var % var for modulus
 
-// Unary Operators
+// ---------- Unary Operators ----------
 // var++ to increment positively
 // var-- to decrement
 
-// prefix and postfix operators
+// ---------- prefix and postfix operators ----------
 // --var will execute the incrementation/decrementation
 // before sending the variable through
 // var++ will execute the incrementation/decrementation
 // after sending the variable through
+
+// ---------- Comparison Operators ----------
+// Equal
+// The double equal operator, (==), will only check for equal values
+// and not data types
+// The triple equal operator, (===) will check for both equal values and
+// data types. This can also be known as strice equality.
+
+// != means not equal
+// > means greater than
+// < less than
+// >= greater than or equal to
+// <= less than or equal to
+
+// ---------- Logical Operators ----------
+// && means and x && y
+// || means or x || y
+// ! means not !x
