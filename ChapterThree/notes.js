@@ -1,7 +1,7 @@
 // Nathaniel Barrera
 // These are the notes taken from Chapter 3
 
-// ---------- Arrays ----------
+// ----------; Arrays ----------
 // Arrays are a list of values, and can even contain different data types.
 
 // Creates an array of strings:
@@ -55,3 +55,76 @@ numbers[5] = 48;
 console.log(numbers.length);
 console.log(numbers);
 
+// ----------Array Methods----------
+// there are multiple methods that can be used in an Array other than
+// length
+
+// Here's the push() method:
+favoriteFruits = ["grapefruit", "orange", "lemon"];
+favoriteFruits.push("tangerine");   // Adds tangerine to the end of the Array
+
+// You can store the length in variable:
+let lenOfFavoriteFruits = favoriteFruits.push("lime"); // stores the value of 5:
+console.log(favoriteFruits);
+
+// The splice method lets you add elements in any part of the Array:
+let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
+console.log(arrOfShapes);
+arrOfShapes.splice(2, 0, "square", "trapezoid");    
+console.log(arrOfShapes);   // The length of the array is so long it \n each line
+
+// You can combine arrays with the "concat" method:
+let arr5 = [1, 2, 3];
+let arr6 = [4, 5, 6];
+let arr7 = arr5.concat(arr6);
+console.log(arr7);
+
+// You can also do this:
+let arr8 = arr7.concat(7, 8, 9);
+console.log(arr8);
+
+// You can delete methods in multiple ways.
+// One of the ways it the pop() method. This will remove the last element of the
+// array.
+arr8.pop();
+console.log(arr8);
+
+// the shift() method will remove the first element in the array:
+arr8.shift();
+console.log(arr8);
+
+// The splice() method can be used to delete values as well:
+arr8.splice(1, 3);
+console.log(arr8);
+
+// The operator delete will delete the specified spot of the array, but will
+// not affect the rest of the indices. The old spot will become defined:
+delete arr8[0];
+console.log(arr8);
+
+// You can find elements using the find() method. Note that this is actually a
+// function:
+arr8 = [2, 6, 7, 8];
+let findValue = arr8.find(function(e) {return e === 6 });
+let findValue2 = arr8.find(e => e === 10);
+console.log(findValue, findValue2);
+
+// Often you want to know what position of the element you want is on. You can 
+// do that with the indexOf() method:
+let findIndex = arr8.indexOf(6);
+let findIndex2 = arr8.indexOf(10);
+console.log(findIndex, findIndex2); // findIndex2 should return -1 since it dosen't exist in the array.
+
+let animals = ["dog", "horse", "cat", "platypus", "dog"];
+let lastDog = animals.lastIndexOf("dog");
+console.log(lastDog);
+
+// ----------Sorting Arrays----------
+// There is a built in method for sorting arrays:
+let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+names.sort();
+console.log(names);
+
+let ages = [18, 33, 40, 56, 72];
+ages.sort();
+console.log(ages);
